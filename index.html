@@ -195,11 +195,11 @@
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
+          </li>          
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
+
 
         </ul>
 
@@ -921,6 +921,42 @@
 
           <ul class="project-list">
 
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="#miskatonic">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Miskatonic</h3>
+
+                <p class="project-category">Games</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://final-374177548893.us-central1.run.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="EzSchedule" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">EzSchedule</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
             <li class="project-item  active" data-filter-item data-category="back-end">
               <a href="https://github.com/linh010604/Document-Management-System">
 
@@ -953,24 +989,6 @@
                 <h3 class="project-title">Free Floating</h3>
 
                 <p class="project-category">Game</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://final-374177548893.us-central1.run.app/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.png" alt="EzSchedule" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">EzSchedule</h3>
-
-                <p class="project-category">Applications</p>
 
               </a>
             </li>
@@ -1073,6 +1091,194 @@
 
           </form>
 
+        </section>      </article>
+
+      <!--
+        - #MISKATONIC PROJECT
+      -->
+
+      <article class="miskatonic" data-page="miskatonic">
+
+        <header>
+          <h2 class="h2 article-title">Miskatonic</h2>
+        </header>
+
+        <section class="project-hero">
+          <div class="project-banner">
+            <img src="./assets/images/Miskatonic/overview.png" alt="Miskatonic University Campus" loading="lazy">
+          </div>
+          
+          <div class="project-overview">
+            <h3 class="h3 section-title">Project Overview</h3>
+            <p class="project-description">
+              In Miskatonic, players take control of the power of ancient being, Labgoroth, to control the malleable
+              psyches of puny humans. Harness their fear and prey on their ignorance to  summon into their realm and
+              wreak havoc. Labgoroth has trapped four unassuming victims into his lair. Make the maze, steer subconsciouses,
+              and facilitate fear to grow your power. You must act fast, however. As time passes, fear erodes and power fades.
+              Rage against the dying of the dark and stuff out all hopes to achieve total control.
+            </p>
+            
+            <div class="project-stats">
+              <div class="stat-item">
+                <h4 class="stat-title">Duration</h4>
+                <p class="stat-value">3 Months</p>
+              </div>
+              <div class="stat-item">
+                <h4 class="stat-title">Team Size</h4>
+                <p class="stat-value">9 Members</p>
+              </div>
+              <div class="stat-item">
+                <h4 class="stat-title">Technology</h4>
+                <p class="stat-value">C#, Unity Engine</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-details">
+          <h3 class="h3 section-title">Technical Implementation</h3>
+          
+          <div class="detail-grid">
+            <div class="detail-image">
+              <img src="./assets/images/Miskatonic/tooltips.png" alt="Tooltips Design" loading="lazy" class="card-image" style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+
+            <div class="detail-card">
+              <h4 class="card-title">Tooltips System</h4>
+              <p class="card-text">
+                Developed a comprehensive digital library system with advanced search capabilities, 
+                metadata management, and long-term preservation strategies.
+                Added tooltips system for dispatch card system. After reviewing phase, players can hover
+                over cards to see detailed information about each card's effects and attributes.
+                I added visual cues and animations to enhance user experience and provide clarity during gameplay.
+                There were bugs when players hover cards at the edge of the screen, so I implemented boundary checks
+                to ensure tooltips are always fully visible within the game window.
+              </p>
+            </div>
+
+            <div class="detail-card">
+              <h4 class="card-title">VFX for Fear Meter UI</h4>
+              <p class="card-text">
+                Created fear totem skill that players can raise enemy fear levels when seeing the totem.
+                Implemented visual and enemy's vision when detecting totem. Enemies' vision also be used for different skills.
+                Integrated the totem skill into the existing dispatch card system, allowing players to strategically
+              </p>
+            </div>
+
+            <div class="detail-image">
+              <img src="./assets/images/Miskatonic/image.png" alt="Maze Level Design" loading="lazy" class="card-image" style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+
+            <div class="detail-image">
+              <img src="./assets/images/Miskatonic/totem.png" alt="Tooltips Design" loading="lazy" class="card-image" width="100%">
+              <img src="./assets/images/Miskatonic/psycho_1.png" alt="Tooltips Design" loading="lazy" class="card-image" width="100%">
+            </div>
+
+            <div class="detail-card">
+                <h4 class="card-title">Gameplay System</h4>
+                <p class="card-text">
+                  Designed and implemented core gameplay mechanics:<br>
+                  - Fear Totem Skill: Created a fear totem skill that increases enemy fear levels when
+                  they see the totem. Implemented visual effects and enemy vision mechanics for
+                  detection. <br>
+                  - Psychosis SKill: Developed a psychosis skill that temporarily alters enemy behavior,
+                  causing fear raise when see other enemies. Implemented visual effects to indicate when
+                  enemies are affected by psychosis. <br>
+                  - Incept Loneliness Skill: Created an incept loneliness skill that manipulates enemy
+                  behavior by increasing their fear levels based on the loneliness level.
+                </p>
+              </div>
+          </div>
+          
+        </section>
+
+        <!-- <section class="project-achievements">
+          <h3 class="h3 section-title">What I Learned</h3>
+          
+          <div class="achievement-list">
+            <div class="achievement-item">
+              <div class="achievement-content">
+                <h4 class="achievement-title">Teamwork and Communication Skill</h4>
+                <p class="achievement-text">
+                  At the first half of the semester, I faced challenges in coordinating with team members
+                  and aligning our development efforts since I was miscommuted with other developers except
+                  the program's lead. Through the first meeting with the lead, I learned to proactively communicate
+                  with other members, set clear expectations, and establish regular check-ins to ensure everyone.
+                </p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon">
+                <ion-icon name="document-text-outline"></ion-icon>
+              </div>
+              <div class="achievement-content">
+                <h4 class="achievement-title">Published Research</h4>
+                <p class="achievement-text">
+                  Co-authored 3 research papers on digital archive security, 
+                  published in peer-reviewed conferences and journals.
+                </p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+              <div class="achievement-content">
+                <h4 class="achievement-title">Industry Collaboration</h4>
+                <p class="achievement-text">
+                  Established partnerships with leading cybersecurity firms 
+                  for knowledge exchange and technology validation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <section class="project-gallery">
+          <h3 class="h3 section-title">Project Gallery</h3>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="./assets/images/Miskatonic/image.png" alt="Analytics Dashboard" loading="lazy">
+              <div class="gallery-overlay">
+                <p class="gallery-text">Fear Vile</p>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="./assets/images/Miskatonic/tooltips.png" alt="Security Interface" loading="lazy">
+              <div class="gallery-overlay">
+                <p class="gallery-text">Tooltips System</p>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="./assets/images/Miskatonic/psycho_1.png" alt="Digital Archive" loading="lazy">
+              <div class="gallery-overlay">
+                <p class="gallery-text">VFX for AI's state</p>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="./assets/images/Miskatonic/totem.png" alt="Mobile Interface" loading="lazy">
+              <div class="gallery-overlay">
+                <p class="gallery-text">Skill Cards for Dispatch System</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-links">
+          <h3 class="h3 section-title">Project Resources</h3>
+          
+          <div class="links-container">
+            <a href="https://jack-rockwood.itch.io/miskatonic" class="project-link" target="_blank">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span>Live Demo</span>
+            </a>
+          </div>
         </section>
 
       </article>
@@ -1080,6 +1286,252 @@
     </div>
 
   </main>
+
+<!--
+    - # Template PROJECT
+-->
+
+  <article class="miskatonic" data-page="project_template">
+
+    <header>
+      <h2 class="h2 article-title">Miskatonic</h2>
+    </header>
+
+    <section class="project-hero">
+      <div class="project-banner">
+        <img src="./assets/images/Miskatonic/project-7.png" alt="Miskatonic University Campus" loading="lazy">
+      </div>
+          
+      <div class="project-overview">
+        <h3 class="h3 section-title">Project Overview</h3>
+        <p class="project-description">
+          In Miskatonic, players take control of the power of ancient being, Labgoroth, to control the malleable
+          psyches of puny humans. Harness their fear and prey on their ignorance to  summon into their realm and
+          wreak havoc. Labgoroth has trapped four unassuming victims into his lair. Make the maze, steer subconsciouses,
+          and facilitate fear to grow your power. You must act fast, however. As time passes, fear erodes and power fades.
+          Rage against the dying of the dark and stuff out all hopes to achieve total control.
+        </p>
+            
+        <div class="project-stats">
+          <div class="stat-item">
+            <h4 class="stat-title">Duration</h4>
+            <p class="stat-value">3 Months</p>
+          </div>
+          <div class="stat-item">
+            <h4 class="stat-title">Team Size</h4>
+            <p class="stat-value">9 Members</p>
+          </div>
+          <div class="stat-item">
+            <h4 class="stat-title">Technology</h4>
+            <p class="stat-value">C#, Unity Engine</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section class="project-details">
+          <h3 class="h3 section-title">Technical Implementation</h3>
+          
+          <div class="detail-grid">
+            <div class="detail-card">
+              <div class="card-icon">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+              </div>
+              <h4 class="card-title">Security Framework</h4>
+              <p class="card-text">
+                Implemented advanced encryption algorithms and multi-layered security protocols 
+                to protect sensitive academic research data and multimedia content.
+              </p>
+            </div>
+
+            <div class="detail-card">
+              <div class="card-icon">
+                <ion-icon name="library-outline"></ion-icon>
+              </div>
+              <h4 class="card-title">Digital Archive System</h4>
+              <p class="card-text">
+                Developed a comprehensive digital library system with advanced search capabilities, 
+                metadata management, and long-term preservation strategies.
+              </p>
+            </div>
+
+            <div class="detail-card">
+              <div class="card-icon">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
+              <h4 class="card-title">Analytics Dashboard</h4>
+              <p class="card-text">
+                Created interactive dashboards for tracking usage patterns, security metrics, 
+                and system performance with real-time monitoring capabilities.
+              </p>
+            </div>
+
+            <div class="detail-card">
+              <div class="card-icon">
+                <ion-icon name="cloud-upload-outline"></ion-icon>
+              </div>
+              <h4 class="card-title">Cloud Integration</h4>
+              <p class="card-text">
+                Seamlessly integrated with cloud storage solutions while maintaining data sovereignty 
+                and compliance with academic research standards.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-timeline">
+          <h3 class="h3 section-title">Development Timeline</h3>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="timeline-title">Phase 1: Research & Planning</h4>
+                <span class="timeline-date">Jan 2023 - Mar 2023</span>
+                <p class="timeline-text">
+                  Conducted extensive research on multimedia security protocols and designed 
+                  the system architecture with stakeholder requirements analysis.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="timeline-title">Phase 2: Core Development</h4>
+                <span class="timeline-date">Apr 2023 - Oct 2023</span>
+                <p class="timeline-text">
+                  Built the foundational security framework, implemented the digital archive system, 
+                  and developed the user interface with advanced search capabilities.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="timeline-title">Phase 3: Testing & Deployment</h4>
+                <span class="timeline-date">Nov 2023 - Jun 2024</span>
+                <p class="timeline-text">
+                  Conducted comprehensive security testing, performance optimization, 
+                  and successful deployment to production environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-achievements">
+          <h3 class="h3 section-title">Key Achievements</h3>
+          
+          <div class="achievement-list">
+            <div class="achievement-item">
+              <div class="achievement-icon">
+                <ion-icon name="trophy-outline"></ion-icon>
+              </div>
+              <div class="achievement-content">
+                <h4 class="achievement-title">Research Excellence Award</h4>
+                <p class="achievement-text">
+                  Received the MSU Computer Science Department's Research Excellence Award 
+                  for innovative approaches to multimedia security.
+                </p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon">
+                <ion-icon name="document-text-outline"></ion-icon>
+              </div>
+              <div class="achievement-content">
+                <h4 class="achievement-title">Published Research</h4>
+                <p class="achievement-text">
+                  Co-authored 3 research papers on digital archive security, 
+                  published in peer-reviewed conferences and journals.
+                </p>
+              </div>
+            </div>
+
+            <div class="achievement-item">
+              <div class="achievement-icon">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+              <div class="achievement-content">
+                <h4 class="achievement-title">Industry Collaboration</h4>
+                <p class="achievement-text">
+                  Established partnerships with leading cybersecurity firms 
+                  for knowledge exchange and technology validation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-gallery">
+          <h3 class="h3 section-title">Project Gallery</h3>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="./assets/images/miskatonic-dashboard.jpg" alt="Analytics Dashboard" loading="lazy">
+              <div class="gallery-overlay">
+                <p class="gallery-text">Interactive Analytics Dashboard</p>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="./assets/images/miskatonic-security.jpg" alt="Security Interface" loading="lazy">
+              <div class="gallery-overlay">
+                <p class="gallery-text">Security Management Interface</p>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="./assets/images/miskatonic-archive.jpg" alt="Digital Archive" loading="lazy">
+              <div class="gallery-overlay">
+                <p class="gallery-text">Digital Archive System</p>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="./assets/images/miskatonic-mobile.jpg" alt="Mobile Interface" loading="lazy">
+              <div class="gallery-overlay">
+                <p class="gallery-text">Mobile-Responsive Design</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-links">
+          <h3 class="h3 section-title">Project Resources</h3>
+          
+          <div class="links-container">
+            <a href="https://github.com/yourusername/miskatonic-project" class="project-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+              <span>View Source Code</span>
+            </a>
+            
+            <a href="https://miskatonic-demo.netlify.app" class="project-link" target="_blank">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span>Live Demo</span>
+            </a>
+            
+            <a href="./assets/files/miskatonic-documentation.pdf" class="project-link" target="_blank">
+              <ion-icon name="document-outline"></ion-icon>
+              <span>Technical Documentation</span>
+            </a>
+            
+            <a href="./assets/files/miskatonic-research-paper.pdf" class="project-link" target="_blank">
+              <ion-icon name="school-outline"></ion-icon>
+              <span>Research Paper</span>
+            </a>
+          </div>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+  
 
 
   <!--

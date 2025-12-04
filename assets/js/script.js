@@ -305,20 +305,48 @@ function showContactFallback(fullname, email, message) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
+// Function to navigate to a specific page
+function navigateToPage(targetPage) {
+  for (let i = 0; i < pages.length; i++) {
+    if (targetPage === pages[i].dataset.page) {
+      pages[i].classList.add("active");
+      navigationLinks[i].classList.add("active");
+      window.scrollTo(0, 0);
+    } else {
+      pages[i].classList.remove("active");
+      navigationLinks[i].classList.remove("active");
+    }
+  }
+}
+
+// Function to handle URL hash changes
+function handleHashChange() {
+  const hash = window.location.hash.substring(1); // Remove the # symbol
+  if (hash) {
+    navigateToPage(hash);
+  } else {
+    // Default to 'about' page if no hash
+    navigateToPage('about');
+  }
+}
+
+// Add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-
+    const targetPage = this.innerHTML.toLowerCase();
+    
+    // Update URL hash
+    window.location.hash = targetPage;
+    
+    // Navigate to page
+    navigateToPage(targetPage);
   });
 }
+
+// Handle browser back/forward navigation
+window.addEventListener('hashchange', handleHashChange);
+
+// Handle initial page load
+window.addEventListener('load', function() {
+  handleHashChange();
+});
