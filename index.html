@@ -1111,11 +1111,17 @@
           <div class="project-overview">
             <h3 class="h3 section-title">Project Overview</h3>
             <p class="project-description">
-              In Miskatonic, players take control of the power of ancient being, Labgoroth, to control the malleable
+              <!-- In Miskatonic, players take control of the power of ancient being, Labgoroth, to control the malleable
               psyches of puny humans. Harness their fear and prey on their ignorance to  summon into their realm and
               wreak havoc. Labgoroth has trapped four unassuming victims into his lair. Make the maze, steer subconsciouses,
               and facilitate fear to grow your power. You must act fast, however. As time passes, fear erodes and power fades.
-              Rage against the dying of the dark and stuff out all hopes to achieve total control.
+              Rage against the dying of the dark and stuff out all hopes to achieve total control. -->
+              In Miskatonic, I worked as a gameplay programmer to develop core gameplay mechanics and systems for a horror-themed strategy game.
+              Players assume the role of an ancient being, Labgoroth, who manipulates the fears of humans to gain power.
+              The game involves navigating a maze-like environment, steering the subconscious minds of victims, and utilizing fear-based abilities to achieve dominance.
+              As a gameplay programmer, I was responsible for implementing key features such as the fear totem
+              skill, psychosis skill, and incept loneliness skill, which added depth and strategy to the gameplay experience.
+              
             </p>
             
             <div class="project-stats">
@@ -1140,44 +1146,53 @@
           
           <div class="detail-grid">
             <div class="detail-image">
-              <img src="./assets/images/Miskatonic/tooltips.png" alt="Tooltips Design" loading="lazy" class="card-image" style="width:100%;height:100%;object-fit:cover;object-position:left center;display:block;">
+              <img src="./assets/images/Miskatonic/code_tooltips.png" alt="Tooltips Design" loading="lazy" class="card-image" style="width:100%;height:100%;object-fit:cover;object-position:left center;display:block;">
             </div>
 
             <div class="detail-card">
               <h4 class="card-title">Tooltips System</h4>
               <p class="card-text">
-                Developed a comprehensive digital library system with advanced search capabilities, 
-                metadata management, and long-term preservation strategies.
                 Added tooltips system for dispatch card system. After reviewing phase, players can hover
                 over cards to see detailed information about each card's effects and attributes.
-                I added visual cues and animations to enhance user experience and provide clarity during gameplay.
-                There were bugs when players hover cards at the edge of the screen, so I implemented boundary checks
-                to ensure tooltips are always fully visible within the game window.
+                Initially, the card in the corner of the screen would be partially cut off when hovered over,
+                making it difficult for players to read the tooltip. I implemented a dynamic positioning system
+                that adjusts the tooltip's location based on the card's position on the screen.
               </p>
             </div>
 
             <div class="detail-card">
               <h4 class="card-title">VFX for Fear Meter UI</h4>
               <p class="card-text">
-                Created fear totem skill that players can raise enemy fear levels when seeing the totem.
-                Implemented visual and enemy's vision when detecting totem. Enemies' vision also be used for different skills.
-                Integrated the totem skill into the existing dispatch card system, allowing players to strategically
+                Created visual effects (VFX) for the fear meter UI to provide players with real-time feedback
+                on the fear levels of enemies. Implemented dynamic animations and particle effects that change
+                based on the current fear state, enhancing the immersive experience and helping players make
+                strategic decisions during gameplay. <br>
+                - The animations when fear gain happens at the same time with state changes which mess up the glow effect
+                and state color change effects. I synchronized the timing of the fear gain animations with the state change effects
+                and pass the correct state color to the VFX system to ensure a smooth transition.<br>
+
+                - When new AI is activated before the glow effect ends, the glow effect will override the correct color.
+                I implemented a check to see if the glow effect is active before applying the new color, ensuring that the correct color is always displayed.
+
               </p>
             </div>
 
             <div class="detail-image">
-              <img src="./assets/images/Miskatonic/image.png" alt="Maze Level Design" loading="lazy" class="card-image" style="width:100%;height:100%;object-fit:cover;display:block;">
+              
+              <img src="./assets/images/Miskatonic/image.png" alt="Maze Level Design" loading="lazy" class="card-image" style="width:100%;object-fit:cover;display:block;"> 
+              <img src="./assets/images/Miskatonic/color_class.png" alt="Maze Level Design" loading="lazy" class="card-image" style="width:100%;object-fit:cover;display:block;">
+              <img src="./assets/images/Miskatonic/fear_state.png" alt="Maze Level Design" loading="lazy" class="card-image" style="width:100%;object-fit:cover;display:block;">
+              <img src="./assets/images/Miskatonic/fix_1.png" alt="Maze Level Design" loading="lazy" class="card-image" style="width:100%;object-fit:cover;display:block;">
             </div>
 
             <div class="detail-image">
-              <img src="./assets/images/Miskatonic/totem.png" alt="Tooltips Design" loading="lazy" class="card-image" width="100%">
-              <img src="./assets/images/Miskatonic/psycho_1.png" alt="Tooltips Design" loading="lazy" class="card-image" width="100%">
+              <img src="./assets/images/Miskatonic/code_vision.png" alt="Tooltips Design" loading="lazy" class="card-image" width="100%">
             </div>
 
             <div class="detail-card">
                 <h4 class="card-title">Gameplay System</h4>
                 <p class="card-text">
-                  Designed and implemented core gameplay mechanics:<br>
+                  Designed and implemented player vision code that later is used for different mechanic:<br>
                   - Fear Totem Skill: Created a fear totem skill that increases enemy fear levels when
                   they see the totem. Implemented visual effects and enemy vision mechanics for
                   detection. <br>
@@ -1241,7 +1256,7 @@
           
           <div class="gallery-grid">
             <div class="gallery-item">
-              <img src="./assets/images/Miskatonic/image.png" alt="Analytics Dashboard" loading="lazy">
+              <img src="./assets/images/Miskatonic/toem_vfx.png" alt="Analytics Dashboard" loading="lazy">
               <div class="gallery-overlay">
                 <p class="gallery-text">Fear Vile</p>
               </div>
